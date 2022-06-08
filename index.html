@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Home  </title>
+	<title>Home </title>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
 				</ul>
 
 				<img src="/imgs/3 gach.svg" class="min-w-[40px] min-h-[40px] flex lg:hidden" alt="">
-			</div> 
+			</div>
 
 		</div>
 	</header>
@@ -34,23 +34,25 @@
 	<section class="introduce ">
 		<div class="max-w-6xl mx-auto px-5  ">
 
-			<div class="grid grid-cols-1  lg:grid-cols-3 mt-32  space-x-[70px]">
+			<div class="grid grid-cols-1  lg:grid-cols-3 mt-32 space-x-0 lg:space-x-[70px]">
 
 				<div class="col-span-2 lg:order-1 order-2">
-					<h2 class="text-center lg:text-left text-[32px] lg:text-[44px] font-bold">Hi, I am John, <br> Creative Technologist</h2>
+					<h2 class="text-center lg:text-left text-[32px] lg:text-[44px] font-bold">Hi, I am John, <br>
+						Creative Technologist</h2>
 
-					<p class="mt-[35px] text-center lg:text-left">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet <br> sint.
+					<p class="mt-[35px] text-center lg:text-left">Amet minim mollit non deserunt ullamco est sit aliqua
+						dolor do amet <br> sint.
 						Velit officia consequat duis enim velit mollit. Exercitation veniam <br> consequat sunt nostrud
 						amet.
 					</p>
 
 					<button
-						class="block mx-auto mt-8 w-[208px] h-[47px] bg-[#FF6464] rounded text-xl font-medium text-white hover:bg-[#ffeaa7] hover:text-black">Download
+						class="block mx-auto lg:mx-0 mt-8 min-w-[208px] min-h-[47px] bg-[#FF6464] rounded text-xl font-medium text-white hover:bg-[#ffeaa7] hover:text-black">Download
 						Resume</button>
 				</div>
 
-				<div class="order-1 lg:order-2 mx-auto my-8 lg:my-0">
-					<img class=" min-w-[243px] min-h-[243px]" src="/imgs/avt.png" alt="">
+				<div class="order-1 lg:order-2 my-8 lg:my-0 flex justify-center lg:grid ">
+					<img class="min-w-[300px] min-h-[300px]" src="/imgs/avt.png" alt="">
 				</div>
 
 			</div>
@@ -59,17 +61,18 @@
 
 	</section>
 
-	<section class="Recent posts bg-[#EDF7FA] h-[396px]">
+	<section class="Recent posts bg-[#EDF7FA] ">
 		<div class="max-w-6xl mx-auto px-5  ">
 			<div class=" mt-[60px]">
 
 
-				<div class="flex justify-between pt-5">
-					<label class="font-normal text-[22px]" for="">Recent posts</label>
-					<button class="text-[16px font-normal text-[#00A8CC] hover:drop-shadow-lg ">View all</button>
+				<div class="lg:flex text-center  justify-between pt-5">
+					<span class=" font-normal text-[18px] lg:text-[22px]" for="">Recent posts</span>
+					<button class=" hidden lg:flex text-[16px font-normal text-[#00A8CC] hover:drop-shadow-lg ">View
+						all</button>
 				</div>
 
-				<div class="grid grid-cols-2 gap-8 pt-5">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 py-5">
 
 					<div class=" bg-white px-16 py-8 hover:drop-shadow-lg ">
 						<h3><a class="text-[26px] font-bold" href="">Making a design system from scratch</a></h3>
@@ -86,7 +89,7 @@
 					</div>
 
 					<div class=" bg-white px-16 py-8 hover:drop-shadow-lg ">
-						<h3><a class="text-[26px] font-bold" href="">Making a design system from scratch</a></h3>
+						<h3><a class="text-[26px] font-bold" href="">Creating pixel perfect icons in Figma</a></h3>
 
 						<p class="py-3"> <label class="text-[18px]" for="">12 Feb 2020</label> <label class="px-[10px]"
 								for=""> | </label>
@@ -110,19 +113,20 @@
 		<div class="max-w-6xl mx-auto px-5  ">
 			<div>
 
-				<div class="pt-[20px]">
-					<label class="text-[22px] font-normal " for="">Featured works</label>
+				<div class="my-[20px] text-center lg:text-left">
+					<span class="text-[22px] font-normal " for="">Featured works</span>
 				</div>
 
-				<div class="mt-8 space-y-12">
+				<div class=" space-y-12">
 
-					<div class="flex space-x-6">
-						<div>
-							<img src="/imgs/img 1.png" alt="">
+					<div class="lg:flex space-x-6">
+						<div class="flex justify-center mb-[18px] lg:mb-0">
+							<img class="w-full lg:w-auto lg:h-auto" src="/imgs/img 2.png" alt="">
 						</div>
 
 						<div class="">
-							<h2><a class="text-[30px] font-bold text-[#21243D] hover:text-[#273c75]" href="">Designing Dashboards</a></h2>
+							<h2><a class=" text-[24px] lg:text-[30px] font-bold text-[#21243D] hover:text-[#273c75]"
+									href="">Designing Dashboards</a></h2>
 							<div class="my-5 bg-[#142850] rounded-full inline-block px-3 text-white">
 								2020
 							</div>
@@ -137,13 +141,14 @@
 
 					<hr>
 
-					<div class="flex space-x-6">
+					<div class="hidden lg:flex space-x-6">
 						<div>
-							<img src="/imgs/img 2.png" alt="">
+							<img src="/imgs/img 1.png" alt="">
 						</div>
 
 						<div class="">
-							<h2><a class="text-[30px] font-bold text-[#21243D] hover:text-[#273c75]" href="">Vibrant Portraits of 2020</a></h2>
+							<h2><a class="text-[30px] font-bold text-[#21243D] hover:text-[#273c75]" href="">Vibrant
+									Portraits of 2020</a></h2>
 							<div class="my-5 bg-[#142850] rounded-full inline-block px-3 text-white">
 								2018
 							</div>
@@ -158,13 +163,14 @@
 
 					<hr>
 
-					<div class="flex space-x-6">
+					<div class="hidden lg:flex space-x-6">
 						<div>
 							<img src="/imgs/img 3.png" alt="">
 						</div>
 
 						<div class="">
-							<h2><a class="text-[30px] font-bold text-[#21243D] hover:text-[#273c75]" href="">36 Days of Malayalam type</a></h2>
+							<h2><a class="text-[30px] font-bold text-[#21243D] hover:text-[#273c75]" href="">36 Days of
+									Malayalam type</a></h2>
 							<div class="my-5 bg-[#142850] rounded-full inline-block px-3 text-white">
 								2018
 							</div>
@@ -194,7 +200,7 @@
 				<img src="/imgs/insta.svg" alt="">
 				<img src="/imgs/Group.svg" alt="">
 				<img src="/imgs/Linkedin.svg" alt="">
-				
+
 			</div>
 			<p class="text-center mt-[20px] mb-[100px]">Copyright ©2020 All rights reserved </p>
 		</div>
